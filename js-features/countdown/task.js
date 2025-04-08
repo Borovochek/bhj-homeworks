@@ -5,7 +5,11 @@ const toCustomTimeString = (seconds) => {
     return `${hours}:${minutes}:${secondsPart}`;
 };
 let timerStartValue = 59;
+<<<<<<< HEAD
 const timerElement = document.getElementById("timer"); 
+=======
+const timerElement = document.getElementById("timer");
+>>>>>>> 5124386b12a27f68801cff06a7dc2025804200b4
 const timerInterval = setInterval(() => {
     if (timerStartValue >= 0) {
        
