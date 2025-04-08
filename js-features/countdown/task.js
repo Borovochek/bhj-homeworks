@@ -4,7 +4,7 @@ const toCustomTimeString = (seconds) => {
     const secondsPart = (seconds % 60).toString().padStart(2, '0');
     return `${hours}:${minutes}:${secondsPart}`;
 };
-let timerStartValue = 3;
+let timerStartValue = 59;
 const timerElement = document.getElementById("timer");
 const timerInterval = setInterval(() => {
     if (timerStartValue >= 0) {
@@ -13,10 +13,9 @@ const timerInterval = setInterval(() => {
         timerStartValue--;
     }
     else {
-        clearInterval(timerInterval); // останавливаем таймер
+        clearInterval(timerInterval); 
         alert("Вы победили в конкурсе!");
     }
-}, 1000); // 1000 мс = 1 секунда
+}, 1000); 
 
 
-// if (timerStartValue === 0) 
