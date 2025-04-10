@@ -23,8 +23,7 @@
 2. Базовые CSS-классы
 3. Часть написанного кода JS
 
-HTML-разметка представляет 9 лунок (класс *hole*), каждая со своим *id*:
-
+HTML-ра 
 ```html
 <div class="hole-game">
     <div class="hole hole_has-mole" id="hole1"></div>
