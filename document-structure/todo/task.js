@@ -18,6 +18,7 @@ tasksList.addEventListener('click', (event) => {
     if (event.target.classList.contains('task__remove')) {
         event.preventDefault();
         event.target.closest('.task').remove(); 
+    }
 });
 
 
