@@ -1,7 +1,6 @@
 const hasTooltip = document.querySelectorAll('.has-tooltip');
 const body = document.querySelector('body');
 
-
 hasTooltip.forEach(el => {
     el.addEventListener('click', (event) => {
         event.preventDefault();
@@ -19,6 +18,7 @@ hasTooltip.forEach(el => {
             const tooltip = document.createElement('div');
             tooltip.classList.add('tooltip', 'tooltip_active');
             tooltip.textContent = el.getAttribute('title');
+
             body.appendChild(tooltip);
 
              const rect = el.getBoundingClientRect();

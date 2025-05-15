@@ -3,6 +3,7 @@ const btn = document.getElementById('tasks__add');
 const tasksList = document.querySelector('#tasks__list');
 const tasksInput = document.querySelector('.tasks__input');
 
+
 const addTask = (title) => {
     tasksList.insertAdjacentHTML(
         'afterbegin',
@@ -21,7 +22,6 @@ tasksList.addEventListener('click', (event) => {
     }
 });
 
-
 btn.addEventListener('click', (event) => {
     event.preventDefault();
     if (tasksInput.value.trim()) {
@@ -38,4 +38,5 @@ document.addEventListener('keydown', (event) => {
         tasksInput.value = '';
     }
 });
+
 
