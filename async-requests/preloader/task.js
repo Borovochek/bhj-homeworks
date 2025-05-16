@@ -31,31 +31,3 @@ xhr.onload = function () {
 };
 
 xhr.send();
-
-
-
-
-
-
-
-// данном примере в *.item__code* нужно подгрузить значение свойства *CharCode*,
-// в *.item__value* - *Value*
-
-// ### Процесс реализации
-
-// 1. Загрузите данные о курсе валют, отправив GET-запрос
-// по адресу *https://students.netoservices.ru/nestjs-backend/slow-get-courses*
-// 2. По факту загрузки скройте анимацию загрузки
-
-
-
-
-//   // Используем данные как нужно:
-//   if (data.users.length > 0) {
-//     console.log("Пользователи:", data.users);
-//   } else {
-//     console.log("Нет данных");
-//   }
-// } else {
-//   console.error('Ошибка:', xhr.status);
-// }
